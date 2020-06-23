@@ -6,7 +6,7 @@
         private $servidor="localhost";
         private $usuario="root";
         private $clave="";
-        private $nombreBaseDatos="bd_tienda";
+        private $nombreBaseDatos="bd_grupo1";
         private $conexion; //almacena la conexion a la BaseDatos
 
         //Constructor
@@ -40,7 +40,6 @@
 
             $this->conectarConBaseDatos();
             $resultado=$this->conexion->query($consultaSQL);
-            
             return($resultado);
             $this->conexion->close();
         }
